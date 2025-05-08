@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: smart-finance-advisor
+    env: python
+    buildCommand: ""
+    startCommand: python app_safe.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: GROQ_API_KEY
+        value: your-groq-api-key-here
+    plan: free
